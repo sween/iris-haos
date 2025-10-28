@@ -7,8 +7,6 @@
   "startup": "services",
   "network_mode": "host",
   "boot": "auto",
-  "options": {},
-  "schema": {},
   "image": "containers.intersystems.com/intersystems/irishealth-community:2025.1",
   "ports": {
     "1972/tcp": 1972,
