@@ -1,0 +1,21 @@
+{
+  "name": "InterSystems IRIS Community",
+  "version": "1.0.0",
+  "slug": "irishealth",
+  "description": "InterSystems IRIS Health Community Edition",
+  "arch": ["amd64"],
+  "startup": "services",
+  "network_mode": "host",
+  "boot": "auto",
+  "image": "containers.intersystems.com/intersystems/irishealth-community:2025.1",
+  "icon": "https://raw.githubusercontent.com/sween/iris-haos/main/irishealth/icon.png",
+  "ports": {
+    "1972/tcp": 1972,
+    "52773/tcp": 52773
+  },
+  "init": false,
+  "ingress": false,
+  "map": ["config:rw"],
+  "options": {},
+  "schema": {}
+}
