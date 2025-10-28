@@ -1,0 +1,16 @@
+{
+  "name": "InterSystems IRIS Community",
+  "version": "1.0.0",
+  "slug": "irishealth",
+  "description": "InterSystems IRIS Health Community Edition",
+  "arch": ["amd64", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "image": "containers.intersystems.com/intersystems/irishealth-community:2025.1",
+  "ports": {
+    "1972/tcp": 1972,
+    "52773/tcp": 52773
+  }
+}
