@@ -1,13 +1,18 @@
 {
-  "name": "InterSystems IRIS (HAOS)",
+  "name": "InterSystems IRIS Health Community (HAOS)",
   "version": "0.1.0",
   "slug": "irishealth",
-  "description": "Runs InterSystems IRIS as a Home Assistant add-on",
+  "description": "Runs InterSystems IRIS Health Community as a Home Assistant add-on",
   "startup": "services",
   "boot": "auto",
   "arch": ["amd64", "aarch64"],
   "ports": { "1972/tcp": 1972, "52773/tcp": 52773 },
   "icon": "https://raw.githubusercontent.com/sween/iris-haos/main/irishealth/icon.png",
-  "options": {},
-  "schema": {}
+  "options": {
+    "endpoint": "http://localhost:52773/csp/sys/UtilHome.csp"
+  },
+  "schema": {
+    "endpoint": "str"
+  },
+  "webui": "http://[HOST]:[PORT:52773]/csp/sys/UtilHome.csp"
 }
