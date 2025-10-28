@@ -5,6 +5,7 @@
   "description": "InterSystems IRIS Health Community Edition",
   "arch": ["amd64", "aarch64"],
   "startup": "services",
+  "network_mode": "host",
   "boot": "auto",
   "options": {},
   "schema": {},
