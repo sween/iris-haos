@@ -2,6 +2,8 @@
 
 > *InterSystems IRIS Add On(s) for Home Assistant.*
 
+![alt text](assets/image.png)
+
 ## 🌟 Highlights
 
 - Instantly provision your IRIS Application to be launched from HAOS!
@@ -10,6 +12,8 @@
 ## ℹ️ Overview
 
 We're Running HAOS, and we have checked the about box and confirmed our installation method to be "Home Assistant OS".
+
+![alt text](assets/image-1.png)
 
 
 ## ⬇️ Installation
@@ -21,6 +25,21 @@ For Home Assistant OS, follow these steps:
 3. Search for "InterSystems IRIS Community Add-ons" and install and start it.
 4. Launch the System Management Portal.
 
+Add Repository
+
+![alt text](assets/image-2.png)
+
+Search for it in the store
+
+![alt text](assets/image-3.png)
+
+Install and Start
+
+![alt text](assets/image-4.png)
+
+Launch
+
+![alt text](assets/image-5.png)
 
 ## 📝 Extra Credit
 
@@ -45,6 +64,8 @@ ha core restart
 
 Add new sensor to your dashboard:
 
+
+![alt text](assets/image-6.png)
 
 
 ## ✍️ Authors ( so far! )
