@@ -50,10 +50,15 @@ Add the following to your `configuration.yaml`:
 ```yaml
 sensor:
   - platform: rest
-    name: iris_global_references_total
+    name: iris_log_reads_per_sec
     resource: http://127.0.0.1:52773/api/monitor/metrics
     value_template: >
-      {{ value.split('iris_global_references_total')[1].split('\n')[0].split()[-1] }}
+      {% set lines = value.split('\n') %}
+      {% for line in lines %}
+        {% if line.startswith('iris_log_reads_per_sec ') %}
+          {{ line.split()[-1] }}
+        {% endif %}
+      {% endfor %}
 ```
 
 for some reason, I had to:
